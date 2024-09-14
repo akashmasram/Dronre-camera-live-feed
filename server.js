@@ -38,7 +38,7 @@ process.on('SIGINT', () => {
 
 // Serve the index.html file
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public'));
+    res.sendFile(path.join(__dirname, 'public/index.html'));
 });
 
 // Serve the HLS stream files
